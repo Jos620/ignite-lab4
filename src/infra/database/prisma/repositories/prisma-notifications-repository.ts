@@ -19,6 +19,6 @@ export class PrismaNotificationsRepository implements NotificationsRepository {
   }
 
   async getAll(): Promise<Notification[]> {
-    return await this.prismaService.notification.findMany();
+    throw new Error('Method not implemented.');
   }
 }
