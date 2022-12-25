@@ -4,7 +4,7 @@ describe('Notification content', () => {
   it('should be able to create a notification content', () => {
     const content = new Content('Hello World!');
 
-    expect(content).toBeTruthy();
+    expect(content.value).toBe('Hello World!');
   });
 
   it('should not be able to create a notification content with less than 5 characters', () => {
