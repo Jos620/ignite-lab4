@@ -12,7 +12,7 @@ describe('Send notification', () => {
       recipientId: 'example-id',
     });
 
-    const allNotifications = await notificationsRepository.getAll();
+    const allNotifications = notificationsRepository.notifications;
 
     expect(allNotifications).toHaveLength(1);
     expect(allNotifications[0]).toEqual(notification);
